@@ -81,7 +81,7 @@ Oscilloscope Probes | 1 | N/A
 
 <details>
 <summary><b>Enhanced Universal Serial Communication Interface (eUSCI)</b></summary>
-
+The eUSCI is a communication module on the microcontroller. It allows for UART, SPI, and I2C, of which UART will be used for this lab. The UART allows for 8 bits of data with one start bit and one end bit. The baud rate is programmable and the data order can be set to LSB or MSB first.
 
 </details>
 
@@ -93,21 +93,21 @@ The BlueFruit has 8 pins.
 
 --- | ---
 
-<b>VIN</b> | test
+<b>VIN</b> | Power for the module
 
-<b>GND</b> | test
+<b>GND</b> | Ground for the module
 
-<b>TXO</b> | test
+<b>TXO</b> | Transit from module to connected microcontroller
 
-<b>RXI</b> | test
+<b>RXI</b> | Receive to module from microcontroller
 
-<b>CTS</b> | test
+<b>CTS</b> | Active low allows transfer from module to microcontroller
 
-<b>RTS</b> | test
+<b>RTS</b> | Active low allows transfer from microcontroller to module (Not used in this lab)
 
-<b>MOD</b> | test
+<b>MOD</b> | When low the BLE module is in DATA mode, high selects Command mode
 
-<b>DFU</b> | test
+<b>DFU</b> | Used for firmware updates (Not used in this lab)
 
 </details>
 
