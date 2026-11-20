@@ -80,9 +80,24 @@ Oscilloscope Probes | 1 | N/A
 ---
 
 <details>
+<summary><b>Enhanced Universal Serial Communication Interface (eUSCI)</b></summary>
+
+
+</details>
+
 <summary><b>BlueFruit</b></summary>
-**Rewrite**
-This lab is primarily about the reflective sensor array. This device is made up of LEDs illuminating the ground and phototransistors detecting how much light the ground reflects. This allows the array to send data of the color below it, allowing for the detection of lines for a maze. There are eight sensors in the array and each independently sends data on the reflectance of the ground below it. This allows for a program to identify where a line is in relation to the device and use this information to modify the direction of travel. In this lab the program will identify different states of the eight sensors and react with unique outputs for each detection.
+The main purpose of this lab is to utilize a bluetooth connection to communicate wirelessly using UART. To achieve the bluetooth connection the Adafruit Bluefruit LE UART module is used as a receiver. It uses Bluetooth Low Energy (BLE) to communicate with a mobile app.
+The BlueFruit has 8 pins.
+<b>Pin</b> | <b>Purpose</b>
+--- | ---
+<b>VIN</b> | 
+<b>GND</b> | 
+<b>TXO</b> | 
+<b>RXI</b> | 
+<b>CTS</b> | 
+<b>RTS</b> | 
+<b>MOD</b> | 
+<b>DFU</b> | 
 
 </details>
 
