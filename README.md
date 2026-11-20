@@ -119,4 +119,12 @@ We both completed every component of the lab and worked on the report together.
 
 [MSP432P4xx SimpleLink Microcontrollers Technical Reference Manual](https://web.archive.org/web/20200402132841/http:/www.ti.com/lit/ug/slau356i/slau356i.pdf)
 
-[8-Channel QTRX Sensor Array Product Page](https://www.pololu.com/product/3672)
+[Adafruit Bluefruit LE UART Friend Module](https://www.adafruit.com/product/2479)
+
+[Adafruit Bluefruit LE UART Friend Module Tutorial](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend)
+
+[TI DRV8838 Motor Driver Datasheet](https://www.ti.com/lit/gpn/drv8838)
+
+[Bluefruit LE Connect User Guide](https://learn.adafruit.com/bluefruit-le-connect)
+
+[GNU C Library Reference Manual](https://www.gnu.org/s/libc/manual/pdf/libc.pdf)
