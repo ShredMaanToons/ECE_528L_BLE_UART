@@ -90,14 +90,14 @@ The main purpose of this lab is to utilize a bluetooth connection to communicate
 The BlueFruit has 8 pins.
 <b>Pin</b> | <b>Purpose</b>
 --- | ---
-<b>VIN</b> | 
-<b>GND</b> | 
-<b>TXO</b> | 
-<b>RXI</b> | 
-<b>CTS</b> | 
-<b>RTS</b> | 
-<b>MOD</b> | 
-<b>DFU</b> | 
+<b>VIN</b> | test
+<b>GND</b> | test
+<b>TXO</b> | test
+<b>RXI</b> | test
+<b>CTS</b> | test
+<b>RTS</b> | test
+<b>MOD</b> | test
+<b>DFU</b> | test
 
 </details>
 
