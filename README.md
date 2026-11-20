@@ -17,36 +17,45 @@
 <details>
 <summary><h2>Prelab Questions</h2></summary>
 
-1. <b>What does a reflectance sensor consist of? How many reflectance sensors are on the QTRX Reflectance Sensor Array? What is its operating voltage?</b>    
-A reflectance sensor consists of an LED and phototransistor. The QTRX Reflectance Sensor Array consists of eight reflectance sensors. The operating voltage is 5V.
+1. <b>What is Bluetooth Low Energy (BLE)? How does it differ from regular Bluetooth in terms of power consumption and range?</b>    
 
-2. <b>Which control pins on the QTRX Reflectance Sensor Array are responsible for enabling the reflectance sensors? What is their default value after powering on the sensor array? List the pin names and the pin numbers used to connect the two control pins.</b>    
-P5.3 controls the even sensors and P9.2 controls the odd. The default value is off (0). The pin names are "Reflectance Sensor Ctrl Even" and "Reflectance Sensor Ctrl Odd".
 
-3. <b>Write a void function named P5_0_and_P9_7_Init that takes no arguments and configures the P5.0 and P9.7 pins as output GPIO pins. Initialize the value of the P5.0 and P9.7 pins to zero.</b>    
+2. <b>What does GAP stand for and what is its purpose? What is the difference between Peripheral and Central devices in the context of BLE?</b>    
+
+
+3. <b>What is GATT in BLE, and how does it structure data exchange between connected devices? Provide definitions for the following: Profile, Service, and Characteristic.</b>    
+
+
+4. <b>What is an advertising packet in BLE and what information can it contain?</b>    
+
+
+5. <b>What is a UUID used for in BLE and why are 128-bit UUIDs used?</b>
+
+
+6. <b>What bit from which register determines if the UART data is received or transmitted MSB or LSB first?</b>
+
+
+7. <b>Provide the mnemonic and primary module function for each pin listed.</b>
+<b>Pin</b> | <b>Mnemonic</b> | <b>Input Pin Primary Function</b> | <b>Output Pin Primary Function</b>
+--- | --- | --- | ---
+<b>P2.2</b> |  |  | 
+<b>P2.3</b> |  |  | 
+<b>P3.2</b> |  |  | 
+<b>P3.3</b> |  |  | 
+
+8. <b>Write a void function named P2_2_and_P2_3_Init that takes no arguments and configures the following pins to use primary function mode: P2.2 and P2.3. It is not necessary to set the direction of the pins.</b>
 ```
-void P5_0_and_P9_7_Init(void)
+void P2_2_and_P2_3_Init()
 {
-    P5->SEL0 &= ~(0x01)
-    P5->SEL1 &= ~(0x01)
-    P5->DIR |= (0x01)
-    P5->OUT &= ~(0x01)
-
-    P9->SEL0 &= ~(0x80)
-    P9->SEL1 &= ~(0x80)
-    P9->DIR |= (0x80)
-    P9->OUT &= ~(0x80)
+    
 }
 ```
-
-4. <b>Write a void function named Print_Binary</b>    
-(Included as file in repository.)
 </details>
 
 <details>
 <summary><h2>Overview</h2></summary>
 
-This lab serves as an introduction into the reflective sensors used on the car, and is a stepping stone towards setting up the fully operational rover.
+This lab introduces bluetooth control of the car, using a phone app to send data to the vehical allowing remote control.
 </details>
 
 <details>
@@ -57,11 +66,10 @@ This lab serves as an introduction into the reflective sensors used on the car, 
 MSP432 LaunchPad | 1 | Texas Instruments
 USB-A to Micro-USB Cable | 1 | N/A
 TI-RSLK MAX Chassis | 1 | Pololu
-8-Channel QTRX Sensor Array | 1 | Pololu
+Adafruit BLE UART Module | 1 | Adafruit
+PMOD SWT | 1 | Digilent
+Oscilloscope Probes | 1 | N/A
 </details>
-
-
-
 
 
 
@@ -72,8 +80,8 @@ TI-RSLK MAX Chassis | 1 | Pololu
 ---
 
 <details>
-<summary><b>Reflectance Sensor Array</b></summary>
-
+<summary><b>BlueFruit</b></summary>
+**Rewrite**
 This lab is primarily about the reflective sensor array. This device is made up of LEDs illuminating the ground and phototransistors detecting how much light the ground reflects. This allows the array to send data of the color below it, allowing for the detection of lines for a maze. There are eight sensors in the array and each independently sends data on the reflectance of the ground below it. This allows for a program to identify where a line is in relation to the device and use this information to modify the direction of travel. In this lab the program will identify different states of the eight sensors and react with unique outputs for each detection.
 
 </details>
@@ -83,7 +91,7 @@ This lab is primarily about the reflective sensor array. This device is made up 
 <details>
 <summary><h2>Analysis and Results</h2></summary>
 
-This lab did not call for any specific results to be included besides the demonstrations completed in lab. 
+This lab did not call for any specific results to be included besides the demonstrations completed in lab. **Check** 
 
 </details>
 
