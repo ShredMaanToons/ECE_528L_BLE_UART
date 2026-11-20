@@ -86,17 +86,17 @@ Oscilloscope Probes | 1 | N/A
 </details>
 
 <summary><b>BlueFruit</b></summary>
-The main purpose of this lab is to utilize a bluetooth connection to communicate wirelessly using UART. To achieve the bluetooth connection the Adafruit Bluefruit LE UART module is used as a receiver. It uses Bluetooth Low Energy (BLE) to communicate with a mobile app.
-The BlueFruit has 8 pins.
-<b>Pin</b> | <b>Purpose</b>
---- | ---
-<b>VIN</b> | test
-<b>GND</b> | test
-<b>TXO</b> | test
-<b>RXI</b> | test
-<b>CTS</b> | test
-<b>RTS</b> | test
-<b>MOD</b> | test
+The main purpose of this lab is to utilize a bluetooth connection to communicate wirelessly using UART. To achieve the bluetooth connection the Adafruit Bluefruit LE UART module is used as a receiver. It uses Bluetooth Low Energy (BLE) to communicate with a mobile app.    
+The BlueFruit has 8 pins.    
+<b>Pin</b> | <b>Purpose</b>    
+--- | ---    
+<b>VIN</b> | test    
+<b>GND</b> | test    
+<b>TXO</b> | test    
+<b>RXI</b> | test    
+<b>CTS</b> | test    
+<b>RTS</b> | test    
+<b>MOD</b> | test    
 <b>DFU</b> | test
 
 </details>
