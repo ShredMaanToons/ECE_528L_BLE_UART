@@ -85,10 +85,18 @@ The eUSCI is a communication module on the microcontroller. It allows for UART, 
 
 </details>
 
+<details>
 <summary><b>BlueFruit</b></summary>
 The main purpose of this lab is to utilize a bluetooth connection to communicate wirelessly using UART. To achieve the bluetooth connection the Adafruit Bluefruit LE UART module is used as a receiver. It uses Bluetooth Low Energy (BLE) to communicate with a mobile app.    
 The BlueFruit has 8 pins.
-
+<b>Description</b> | <b>Quantity</b> | <b>Manufacture</b>
+--- | --- | ---
+MSP432 LaunchPad | 1 | Texas Instruments
+USB-A to Micro-USB Cable | 1 | N/A
+TI-RSLK MAX Chassis | 1 | Pololu
+Adafruit BLE UART Module | 1 | Adafruit
+PMOD SWT | 1 | Digilent
+Oscilloscope Probes | 1 | N/A
 <b>Pin</b> | <b>Purpose</b>
 
 --- | ---
