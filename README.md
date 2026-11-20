@@ -91,7 +91,7 @@ This lab is primarily about the reflective sensor array. This device is made up 
 <details>
 <summary><h2>Analysis and Results</h2></summary>
 
-This lab did not call for any specific results to be included besides the demonstrations completed in lab. **Check** 
+Pictures of the oscilloscope output are included in the repository. The bit duration is almost exactly one millisecond.
 
 </details>
 
