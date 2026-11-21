@@ -53,7 +53,8 @@ From lab manual: "Set the bit order to Least Significant Bit (LSB) first by clea
 ```
 void P2_2_and_P2_3_Init()
 {
-    
+    P2->SEL0 &= ~0x06;
+    P2->SEL1 &= ~0x06;
 }
 ```
 </details>
