@@ -36,11 +36,17 @@ According to Adafruit's introduction to Bluetooth Low Energy: "each service dist
 From lab manual: "Set the bit order to Least Significant Bit (LSB) first by clearing the UCMSB bit (Bit 13) in the CTLW0 register"
 
 7. <b>Provide the mnemonic and primary module function for each pin listed.</b>
+
 <b>Pin</b> | <b>Mnemonic</b> | <b>Input Pin Primary Function</b> | <b>Output Pin Primary Function</b>
+
 --- | --- | --- | ---
+
 <b>P2.2</b> | PM_UCA1RXD/PM_UCA1SOMI | eUSCI_A1 UART RXD (direction controlled by eUSCI – Input) | eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)
+
 <b>P2.3</b> | PM_UCA1TXD/PM_UCA1SIMO | eUSCI_A1 SPI slave in master out (direction controlled by eUSCI) | eUSCI_A1 UART TXD (direction controlled by eUSCI – output)
+
 <b>P3.2</b> | PM_UCA2RXD/PM_UCA2SOMI | eUSCI_A2 UART RXD (direction controlled by eUSCI – input) | eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)
+
 <b>P3.3</b> | PM_UCA2TXD/PM_UCA2SIMO | eUSCI_A2 SPI slave in master out (direction controlled by eUSCI) | eUSCI_A2 UART TXD (direction controlled by eUSCI – output)
 
 8. <b>Write a void function named P2_2_and_P2_3_Init that takes no arguments and configures the following pins to use primary function mode: P2.2 and P2.3. It is not necessary to set the direction of the pins.</b>
