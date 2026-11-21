@@ -18,30 +18,30 @@
 <summary><h2>Prelab Questions</h2></summary>
 
 1. <b>What is Bluetooth Low Energy (BLE)? How does it differ from regular Bluetooth in terms of power consumption and range?</b>    
-
+According to Adafruit's introduction to Bluetooth Low Energy: "BLE actually has a completely different lineage and was started by Nokia as an in-house project called 'Wibree' before being adopted by the Bluetooth SIG" It is a shorter ranged lower power bluetooth option.
 
 2. <b>What does GAP stand for and what is its purpose? What is the difference between Peripheral and Central devices in the context of BLE?</b>    
-
+According to Adafruit's introduction to Bluetooth Low Energy: "GAP is an acronym for the Generic Access Profile, and it controls connections and advertising in Bluetooth... Peripheral devices are small, low power, resource constrained devices that can connect to a much more powerful central device... Central devices are usually the mobile phone or tablet that you connect to with far more processing power and memory."
 
 3. <b>What is GATT in BLE, and how does it structure data exchange between connected devices? Provide definitions for the following: Profile, Service, and Characteristic.</b>    
-
+According to Adafruit's introduction to Bluetooth Low Energy: "GATT is an acronym for the Generic ATTribute Profile, and it defines the way that two Bluetooth Low Energy devices transfer data back and forth using concepts called Services and Characteristics... A Profile is a pre-defined collection of Services that has been compiled by either the Bluetooth SIG or by the peripheral designers... Services are used to break data up into logical entities, and contain specific chunks of data called characteristics. A service can have one or more characteristics, and each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128- bit (for custom services)... The lowest level concept in GATT transactions is the Characteristic, which encapsulates a single data point. Each Characteristic distinguishes itself via a pre-defined 16-bit or 128-bit UUID."
 
 4. <b>What is an advertising packet in BLE and what information can it contain?</b>    
-
+Based on Adafruit's introduction to Bluetooth Low Energy: An advertising packet is a payload that is constantly transmitted out of the device to let central devices in range know that it exists, what it's name is, and other similar information.
 
 5. <b>What is a UUID used for in BLE and why are 128-bit UUIDs used?</b>
-
+According to Adafruit's introduction to Bluetooth Low Energy: "each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128- bit (for custom services)"
 
 6. <b>What bit from which register determines if the UART data is received or transmitted MSB or LSB first?</b>
-
+From lab manual: "Set the bit order to Least Significant Bit (LSB) first by clearing the UCMSB bit (Bit 13) in the CTLW0 register"
 
 7. <b>Provide the mnemonic and primary module function for each pin listed.</b>
 <b>Pin</b> | <b>Mnemonic</b> | <b>Input Pin Primary Function</b> | <b>Output Pin Primary Function</b>
 --- | --- | --- | ---
-<b>P2.2</b> |  |  | 
-<b>P2.3</b> |  |  | 
-<b>P3.2</b> |  |  | 
-<b>P3.3</b> |  |  | 
+<b>P2.2</b> | PM_UCA1RXD/PM_UCA1SOMI | eUSCI_A1 UART RXD (direction controlled by eUSCI – Input) | eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)
+<b>P2.3</b> | PM_UCA1TXD/PM_UCA1SIMO | eUSCI_A1 SPI slave in master out (direction controlled by eUSCI) | eUSCI_A1 UART TXD (direction controlled by eUSCI – output)
+<b>P3.2</b> | PM_UCA2RXD/PM_UCA2SOMI | eUSCI_A2 UART RXD (direction controlled by eUSCI – input) | eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)
+<b>P3.3</b> | PM_UCA2TXD/PM_UCA2SIMO | eUSCI_A2 SPI slave in master out (direction controlled by eUSCI) | eUSCI_A2 UART TXD (direction controlled by eUSCI – output)
 
 8. <b>Write a void function named P2_2_and_P2_3_Init that takes no arguments and configures the following pins to use primary function mode: P2.2 and P2.3. It is not necessary to set the direction of the pins.</b>
 ```
@@ -89,14 +89,6 @@ The eUSCI is a communication module on the microcontroller. It allows for UART, 
 <summary><b>BlueFruit</b></summary>
 The main purpose of this lab is to utilize a bluetooth connection to communicate wirelessly using UART. To achieve the bluetooth connection the Adafruit Bluefruit LE UART module is used as a receiver. It uses Bluetooth Low Energy (BLE) to communicate with a mobile app.    
 The BlueFruit has 8 pins.
-<b>Description</b> | <b>Quantity</b> | <b>Manufacture</b>
---- | --- | ---
-MSP432 LaunchPad | 1 | Texas Instruments
-USB-A to Micro-USB Cable | 1 | N/A
-TI-RSLK MAX Chassis | 1 | Pololu
-Adafruit BLE UART Module | 1 | Adafruit
-PMOD SWT | 1 | Digilent
-Oscilloscope Probes | 1 | N/A
 <b>Pin</b> | <b>Purpose</b>
 
 --- | ---
